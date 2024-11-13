@@ -5,6 +5,7 @@
 // variables can store some information
 // we can use that information later
 // we can change that information later
+// use strict for the safety 
 
 // declare a variable 
 
