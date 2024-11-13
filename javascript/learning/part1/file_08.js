@@ -1,6 +1,7 @@
 
 // typeof operator 
 
+
 // data types (primitive data types)
 // string "alex"
 // number 2, 4, 5.6 
