@@ -1,6 +1,7 @@
 
 //string important functions
 
+
 // trim()  - to remove spaces 
 // toUpperCase()
 // toLowerCase()
