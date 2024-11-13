@@ -1,6 +1,7 @@
 
 // String indexing 
 
+
 let firstName = "alex";
 
 // console.log(firstName[0]);
