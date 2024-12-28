@@ -126,3 +126,44 @@
 - Get keyword is used to access functions like a normal property .
 - Set keyword is used to set the values of the properties .
 - Satic keyword in class is used to crate static properties which can be accessed used the classname without creating any object .
+- How javascript works ?
+- So from code to output in js include two phases , first is compile and second is code execute .
+- Compilation phase include 3 steps - tokenizing/lexing , pharsing , code generation .
+- Tokenizing breaks the code in small chunks , then parsing is done to create ast-abstract syntax tree , then with the help of ast executable code is generated .
+- Major task of compilation is first error checking and second is determining appropriate scope for variables .
+- If there is an error in the code then after parsing error is shown .
+- For second step in compilation js stores the scope of variables like global , function , local scope .
+- Code execution phase executes the js code inside the - global execution context .
+- This phase includes two steps - GEC creation and code execution .
+- Gec(global execution creation) is basically a process to allocate memory to the variables or function .
+- Initially window object is created and assigned to this in the memory .
+- Then all variables is created in the memory .
+- For variables created with var - memory is assigned to the variable and declared but not defined .
+- For variables created with the let and const - memory is assigned but variables is not declared means not initialized , 
+- For functions declaration memory is assigned and function is stored exactly means also defined .
+- Gec code execution phase is the second step after gec creation or memory allocation .
+- Then code is executed line by line - so we can say that js is a synchronous language - browsers are the reason we can use async features .
+- For each line we execute - either we define the variables stored in the memory like name = "alex" or we use the variables defined in the memory .
+- If a code is to print a variable value before we defined it so two cases are there :-
+- First casae if a variable is created with var then it returns undefined .
+- Second case if a variable is created with let or const then it returns uninitialized .
+- Hoisting which we studied earlier works because of the gec(global execution context) creation phase - variables are already in the memory before we access them .
+- In hoisting funtion declaration works perfectly .
+- In hoisting variables created with var or function expression created with var return undefined - means variable in the memory but not defined .
+- In hoisting variables or function expression created with let and const - get the memory but not initialized that means let ans const variables are also hoisted just uninitialized. 
+- Tez is temporal dead zone -  represent the phase when variables are uninitialized .
+- Just like gec there is a fec - function execution context to execute the code inside functions .
+- When js is executing the global code then gec is in the call stack but when fec starts then fec is inside the call stack .
+- Fec also have two phases - memory creation phase and code execution phase .
+- When a function returns a value then that value from fec is passed to the global memory .
+- During fec the arguments comes from the global memory .
+- Variables in the fec are stored as a local memory .
+- Lexical enviournment is a mechanism in js which defines the scope of the variables , determines where a variable or function can be accessed in the code .
+- Every function block script creates a new lexical enviourment and removes when code execution ends.
+- Within a function, the variables declared locally and the variables from the outer scopes are accessible due to the chain of lexical environments.
+- When a function1 executes the function2 inside it then new fec creates and comes inside call stack .
+- According to lexical scope chain , func2 can access the local variables of func2 easily .
+- But when func1 is returing a func2 then lexical scope of func1 ends , then how will func2 can access the local memory of func1 , here closers come in the role .
+- A closure in JavaScript is a feature where a function "remembers" the variables from its surrounding scope, even after that scope has exited. 
+- Closures are created whenever a function is defined inside another function and the inner function accesses variables from the outer function.
+
