@@ -166,4 +166,18 @@
 - But when func1 is returing a func2 then lexical scope of func1 ends , then how will func2 can access the local memory of func1 , here closers come in the role .
 - A closure in JavaScript is a feature where a function "remembers" the variables from its surrounding scope, even after that scope has exited. 
 - Closures are created whenever a function is defined inside another function and the inner function accesses variables from the outer function.
+- How to connect js with html - we have some ways -
+- If we attach script in head then js is loaded an executed before html so it results in error if we are trying to access html elements .
+- Secont we can attach script in the end of the body then html parsed then js loads and executes but it take time which we can improve .
+- Third way is to add again in head but now with the aync attribute in script tag now parsing of html and loading js asynchronously but errors are still there because js stops parsing when js file loaded for execution.
+- Best way is to use differ attribute in script tag here parsing doesn't stop .
+- Dom is a document object model when html parsing is completed then browser create object with parsed information , in js this object is assigned to the window object .
+- We can use document object to manipulate html using js.
+- Console.dir is used to print object in dir format .
+- We can select element through its id using document.getElementById("heading").
+- Document.querySelector is use to select anything like id using # , class using . , body , p , div.headline h2 (h2 of div with headline class) tag etc.
+- We can change the text using .textContent in js .
+- Just like textContent we have .innerText property to see only the text which is visible .
+- To change the style we have .style property .
+- 
 
