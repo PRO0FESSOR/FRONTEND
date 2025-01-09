@@ -1,3 +1,133 @@
 
 // syllabus 
 
+1. Introduction to TypeScript
+
+    What is TypeScript?
+        Differences between TypeScript and JavaScript
+        Benefits of TypeScript
+    Setting up the environment
+        Installing Node.js and npm
+        Installing TypeScript globally (npm install -g typescript)
+        Setting up a project (tsconfig.json)
+    Compiling TypeScript to JavaScript (tsc command)
+    First TypeScript program
+
+2. Basic Types
+
+    Primitive types: number, string, boolean
+    Special types: any, unknown, void, null, undefined, never
+    Type inference
+    Union and intersection types
+    Type aliases
+
+3. Advanced Types
+
+    Enums
+    Tuples
+    Literal types
+    Type guards (typeof, instanceof, custom type guards)
+    Type assertions (casting)
+
+4. Interfaces and Type Aliases
+
+    Defining and using interfaces
+    Optional and readonly properties
+    Extending interfaces
+    Differences between interfaces and type aliases
+
+5. Functions
+
+    Function types
+    Optional and default parameters
+    Rest parameters
+    Function overloading
+    Arrow functions with TypeScript
+
+6. Classes and Object-Oriented Programming
+
+    Defining classes
+    Public, private, and protected access modifiers
+    Readonly properties
+    Getters and setters
+    Inheritance
+    Abstract classes and methods
+    Static properties and methods
+
+7. Generics
+
+    Generic functions
+    Generic classes
+    Generic constraints
+    Using generics with interfaces and type aliases
+
+8. Modules
+
+    Importing and exporting modules
+    Default vs named exports
+    TypeScript module resolution
+    Working with external libraries and type definitions (@types)
+
+9. TypeScript in Practice
+
+    Working with tsconfig.json file
+        Compiler options (e.g., strict, noImplicitAny, target, module)
+    Debugging TypeScript in IDEs like VS Code
+    Type declaration files (.d.ts)
+        Using DefinitelyTyped (@types packages)
+
+10. Advanced TypeScript Features
+
+    Intersection and union types
+    Utility types (e.g., Partial, Pick, Omit, Record, Readonly)
+    Mapped types
+    Conditional types
+    Template literal types
+    Discriminated unions
+
+11. TypeScript with Frameworks
+
+    Using TypeScript with React
+        Typing props, state, and components
+        Context API with TypeScript
+    Using TypeScript with Node.js
+        Typing Express applications
+    Using TypeScript with Angular (built-in support)
+
+12. TypeScript and Testing
+
+    Writing type-safe unit tests with TypeScript
+    Using testing frameworks like Jest or Mocha with TypeScript
+    Mocking in TypeScript
+
+13. Advanced Tooling
+
+    Integrating TypeScript with Webpack
+    Setting up ESLint and Prettier for TypeScript
+    Using Babel with TypeScript
+
+14. TypeScript Design Patterns
+
+    Singleton, Factory, and Builder patterns
+    Decorators (experimental feature)
+    Dependency Injection with TypeScript
+
+15. TypeScript in Large Projects
+
+    Best practices for scalable TypeScript codebases
+    Code splitting and lazy loading
+    Monorepos with TypeScript
+    Advanced tsconfig.json settings
+
+16. Real-World Applications
+
+    Building a full-stack application using TypeScript
+    Backend with Node.js and Express
+    Frontend with React or Angular
+    Database integration (e.g., TypeORM with TypeScript)
+
+17. Staying Updated
+
+    Exploring TypeScript release notes
+    Advanced TypeScript topics from the official documentation
+    Contributing to DefinitelyTyped or other open-source projects
