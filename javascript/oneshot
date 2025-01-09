@@ -1,8 +1,8 @@
  
 - Javascript is backward compatible
-- Babel is a javascript compiler
+- Babel is a javascript compiler ,  that helps in converting ES6+ code into backward-compatible JavaScript for older browsers.
 - can print using console.log()
-- use strict to avoid variable naming mistake
+- use strict helps catch common coding errors like using undeclared variables.
 - can use let and var to create variables
 - const to create variables which doesnt change
 - string indexing starts from 0;
@@ -179,5 +179,65 @@
 - We can change the text using .textContent in js .
 - Just like textContent we have .innerText property to see only the text which is visible .
 - To change the style we have .style property .
-- 
+- To get the attribute of element use .getAttribute . 
+- We can use getElementByClassName or querSelectorAll to get the multiple items . 
+- Get element by class name return html collections . 
+- Query selector all returns the node list .
+- We can use innerHtml property to change the html .
+- We can use getRootNode() to get the root node of html , getChildNodes() to get all the childs in nodelist 
+- We can use getParentNode() to get the parent node . 
+- We can use .classList to get all the classses of an element and use .add and .remove to add or remove and .contain to check if class is in class list.
+- Document .createElement to create new element , .append , .prepend and .remove can be used .
+- Clone Node property to clone html node .
+- QueryselectorAll give the static list and htmlgetelemnt give live list which shows changes not just existed nodes .
+- Events in JavaScript are actions or occurrences (like clicks, keypresses, or page loads) that can be detected by the browser. They enable interaction by triggering event handlers or listeners to execute specific code in response.
+- Events are not the functionality of js , it is provided by the browsers .
+- We can add events using addEventListner(event,()=>{}) .
+- we can also use onEvent attribute like onClick etc .
+- We can use this inside the events .
+- We can loop and apply same event to mumtiple elements in a page .
+- We know browsers have a js engine to execute the code line by line and have some extra features like events .
+- Events are handled by the browsers .
+- First step browser listen the event .
+- Second send the event to the event loop .
+- Third provide the callback fucntion of event to the js engine for execution and also provide extra information related to the event which we can access by passing an argument like callback =  (e){logs(e)}
+- When gec execution ends then event loop returns the event execution .
+- When callstack is empty then event loop shares the event info or execution one by one in a synchronous way .
+- Event bubbling - when same event is applied on multiple elements which is in a parent to child order then event on child will propagate to the parent in upward direction . 
+- Event capturing - when same event is applied on multiple elements which is in a parent to child order then js starting capturing event from parent to child in downward direction .
+- We can start capturing using third argument as true - .addEventListner("click",function(){},true) .
+- Event delegation - Event delegation is a technique where you attach a single event listener to a parent element to manage events for its child elements, even if those children are added dynamically.
+- We know that js is synchronous and single threaded but js supports asynchronous behavior using features like Promises, async/await, and callback functions via the event loop and Web APIs probvided by the browser.
+- Settimeout is a feature provided by the browser to execute the code after specific time like 5 seconds .
+- Example of set time out  - setTimeout(() => console.log("Timeout!"), 1000); // Handled by browser's Web API
+- Settimeout execution - browser handels it , first callback(set time out) passes to the callback queue after the time then event loop checks if gec is ended or callstack is empty then function execution context is passes to the call stack and execution continue then ends .
+- Settimeout returns the id to the gec before browser executes it.
+- Cleartimeout it used to clear the settimeout which requires the id .
+- Set Interval is also a feature provided by the browser to executer the code again and again after particular time .
+- In set interval browser passes the callback to the callback queue again and again after particular time . 
+- As we know callback functions are those which is passes to the other function as an argument , so for async js we can use multiple callbacks for differnt scenarios like onSuccess , onFail etc .
+- When we are using callbacks nestedly then it will make code complex and it is known as callback hell .
+- Yes js uses browser web api's for aync behaviour like set time out , but js also support async behaviour using promises , async await and callbacks .
+- A Promise is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value. It provides a cleaner way to handle async tasks compared to callbacks.
+- Promise in js represent the future value .
+- To use promise we can do - new Promise((resolve,reject)=>{}) . 
+- On the basis of condition we can pass value in resolve or reject like resolve("resolved") reject("failed") .
+- We can acces the promoise value by PromiseName.then((resolvedvalue)=>{logs-resolvedvalue}) .then also includes callback for error . 
+- We can access the promise rejected values directly using .catch(()=>{}) .
+- Browsers handel the promises execution part or aync part .
+- Inside brower , promises are added to the microtask queue .
+- Inisde browsers , microtask queue have higher priority than callback queue . 
+- Then method in promises always return a new promise , so we can chain promises like .then(()=>{}).then(()=>{}) .
+- AJAX (Asynchronous JavaScript and XML) is a technique for making asynchronous requests to a server without reloading the entire webpage. It allows web applications to update parts of the page dynamically with new data.
+- The Fetch API is a modern, built-in JavaScript interface for making HTTP requests. It simplifies asynchronous requests and provides a cleaner, promise-based approach to fetching resources like APIs, files, or data from servers.
+- Ways to send requests or get response from the server is - 1) XMLHttpRequest 2) Fetch Api 3) Axios (third party api).
+- Async/await is a syntax for handling asynchronous operations in JavaScript. It is built on top of Promises and allows writing asynchronous code in a cleaner, synchronous-looking style.
+- Async: Declares a function that returns a Promise.
+- Await: Pauses execution inside an async function until the Promise resolves or rejects.
+- In js we have two techniques - common js and ecma script modules.
+- In cjs we can use module.exports , .exports to export and .require to import variables .
+- In esm we can simply use import to import and export to export and export default to rename variable in imports . 
+- Debouncing is a technique to limit how often a function executes. It ensures that a function runs only after a certain delay has passed since the last time it was called.
+- Use Debouncing to improve performance by avoiding unnecessary function calls , useful for handling events like resizing, scrolling, typing, or clicking.
+- How It Works? = A function is delayed by a timer , If the event is triggered again before the timer ends, the timer resets , The function executes only when no new event occurs within the delay.
 
