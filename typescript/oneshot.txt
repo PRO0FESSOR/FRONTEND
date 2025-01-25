@@ -1,0 +1,27 @@
+
+// oneshot typescript
+
+- Values in javascript have observable behaviour based on the operation .
+- Behaviour depends on the type of the valye (eg: callable or properties).
+- Errors (eg type error) occurs when the operations mismatch the value type.
+- Javascript uses dynamic typing (errors appears at the run time).
+- Typescript is used for the static typing , which predicts the errors before the runtime.
+- Identifies errror (eg callables or non callable value) before running code .
+- Helps catched bugs like typos , uncalled functions or logical errors.
+- Typescript tooling enhances development with features like error detection , code complition , code fixes and navigation.
+- We can install typescript using npm in our system . 
+- File extention of typescript file is ts.
+- We can compile ts file using tsc file.ts.
+- We write code in the ts file , we can see the errors emmiting while writing then we can complile our ts file which tranform it into compatible javascript .
+
+
+
+
+
+
+
+
+
+
+
+
