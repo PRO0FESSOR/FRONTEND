@@ -25,3 +25,10 @@ function add(a: number, b: number): number {
 
 const result = add(5, "10"); // Error: Argument of type 'string' is not assignable to parameter of type 'number'.
 
+// no implicitany example
+
+function greet(name) {
+  console.log(`Hello, ${name}`);
+}
+
+// Error: Parameter 'name' implicitly has an 'any' type.
