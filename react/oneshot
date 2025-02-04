@@ -1,0 +1,60 @@
+- React is a JavaScript library for rendering user interfaces (UI).
+- React lets you combine them into reusable, nestable components. 
+- React applications are built from isolated pieces of UI called components.
+- A React component is a JavaScript function that you can sprinkle with markup. 
+- Components can be as small as a button, or as large as an entire page. 
+- A component name always starts with a capital letter .
+- App.jsx file is a root component file . 
+- we can import export component or variables using default or named import export .
+- If we import a component then we can use it in self closing tag <Component/> .
+- If we import a variable then we can use it in curly braces .
+- JSX is a syntax extension for JavaScript that lets you write HTML-like markup inside a JavaScript file. 
+- JSX and React are two separate things. They’re often used together, but you can use them independently of each other. JSX is a syntax extension, while React is a JavaScript library.
+- Return a single root element is a rule for writing the jsx so we use <> </> and write all the elements inside . 
+- Second rule in jsx is to close all the tags like <img/> .
+- Third rule in jsx is to use camelcase writing like - className .
+- To use javascript variables in jsx we need to use curly braces - {}.
+- Objects or inline css also uses curly braces in js so to use objects , inline css or any code which already use curly braces then we need to use double curly braces to use in jsx .
+- React components use props to communicate with each other. 
+- Every parent component can pass some information to its child components by giving them props. 
+- Props might remind you of HTML attributes, but you can pass any JavaScript value through them, including objects, arrays, and functions.
+- Props are the information that you pass to a JSX tag. For example, className, src, alt, width, and height are some of the props you can pass to an <img> .
+- If we are expecting a prop but it is not provided by parent in some cases in this situation we can use default values 
+function Avatar({ person, size = 100 }) {
+  // ...
+}
+- To pass props, add them to the JSX, just like you would with HTML attributes.
+- To read props, use the function Avatar({ person, size }) destructuring syntax.
+- You can specify a default value like size = 100, which is used for missing and undefined props.
+- You can forward all props with <Avatar {...props} /> JSX spread syntax, but don’t overuse it!
+- Nested JSX like <Card><Avatar /></Card> will appear as Card component’s children prop.
+- Props are read-only snapshots in time: every render receives a new version of props.
+- You can’t change props. When you need interactivity, you’ll need to set state.
+- Your components will often need to display different things depending on different conditions. In React, you can conditionally render JSX using JavaScript syntax like if statements, &&, and ? : operators.
+- Another common shortcut you’ll encounter is the JavaScript logical AND (&&) operator. 
+- Inside React components, it often comes up when you want to render some JSX when the condition is true, or render nothing otherwise. With &&, you could conditionally render the checkmark only if value is true:
+- We can can store that data in JavaScript objects and arrays and use methods like map() and filter() to render lists of components from them.
+- We can use array methods like map or filter to manipulate the data like showing results with price less than 1000.
+- You need to give each array item a key — a string or a number that uniquely identifies it among other items in that array other wise it shows an warning or error .
+- JSX elements directly inside a map() call always need keys! .
+- If your data is generated and persisted locally (e.g. notes in a note-taking app), use an incrementing counter, crypto.randomUUID() or a package like uuid when creating items.
+- Some JavaScript functions are pure. 
+- Pure functions only perform a calculation and nothing more. 
+- By strictly only writing your components as pure functions, you can avoid an entire class of baffling bugs and unpredictable behavior as your codebase grows. 
+- A component must be pure, meaning:
+- It minds its own business. It should not change any objects or variables that existed before rendering.
+- Same inputs, same output. Given the same inputs, a component should always return the same JSX.
+- Rendering can happen at any time, so components should not depend on each others’ rendering sequence.
+- You should not mutate any of the inputs that your components use for rendering. That includes props, state, and context. To update the screen, “set” state instead of mutating preexisting objects.
+- Strive to express your component’s logic in the JSX you return. When you need to “change things”, you’ll usually want to do it in an event handler. As a last resort, you can useEffect.
+- Writing pure functions takes a bit of practice, but it unlocks the power of React’s paradigm.
+- . Thinking of your app as a tree is useful for understanding the relationship between components. 
+- This understanding will help you debug future concepts like performance and state management.
+- Render trees represent the nested relationship between React components across a single render.
+- With conditional rendering, the render tree may change across different renders. With different prop values, components may render different children components.
+- Render trees help identify what the top-level and leaf components are. Top-level components affect the rendering performance of all components beneath them and leaf components are often re-rendered frequently. Identifying them is useful for understanding and debugging rendering performance.
+- Dependency trees represent the module dependencies in a React app.
+- Dependency trees are used by build tools to bundle the necessary code to ship an app.
+- Dependency trees are useful for debugging large bundle sizes that slow time to paint and expose opportunities for optimizing what code is bundled.
+
+
